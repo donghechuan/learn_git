@@ -75,3 +75,6 @@ git reflog
 git add 将文件从工作区添加到暂存区
 git commit 再将文件从暂存区提交到当前分支
 
+撤销修改
+1.文件修改后还没有git add，目前还是在工作区,使用下列的命令可以丢弃工作区的修改
+git checkout -- readme.txt
