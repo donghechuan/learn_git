@@ -26,3 +26,22 @@ git diff filename
 git add filename
 git commit -m “文件描述”
 
+在windows系统中下使用git时 报如下警告：
+
+$ git add readme.txt
+warning: LF will be replaced by CRLF in readme.txt.
+The file will have its original line endings in your working directory.
+
+意思大概是：LF（换行，Line Feed）将会被CRLF（回车换行，CarriageReturn）替代。
+
+                     该文件将在工作目录中具有其原始行尾。
+
+                     报这个警告时是由于文件夹远程不存在，但是不影响提交
+解决方法：
+rm -rf .git  //删除.git
+git config --global core.autocrlf false //禁用自动转换
+
+然后重新执行：
+git init
+git add filename
+git commit -m "文件描述"
