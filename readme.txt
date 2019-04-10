@@ -19,8 +19,10 @@ git add readme.txt
 git commit -m "文件描述"
 查看仓库当前状态
 git status
-查看文件修改内容信息
-git diff filename
+比较未暂存的修改版本与分支中最后的版本之间的不同
+git diff 
+比较暂存区的修改版本与分支中最后的版本之间的不同
+git diff --staged
 
 提交修改与提交新文件是一样的两步
 git add filename
