@@ -45,3 +45,18 @@ git config --global core.autocrlf false //禁用自动转换
 git init
 git add filename
 git commit -m "文件描述"
+
+查看最近到最远的提交日志
+git log 
+简化信息量使用
+git log --pretty=oneline
+
+回退到上一个版本
+git reset --hard HEAD^
+
+回退到上上个版本
+git reset --hard HEAD^^
+
+回退到往上100个版本
+git reset --head HEAD~100
+
