@@ -58,5 +58,8 @@ git reset --hard HEAD^
 git reset --hard HEAD^^
 
 回退到往上100个版本
-git reset --head HEAD~100
+git reset --hard HEAD~100
+
+回到未来的某个版本
+git reset --hard 1b33a(这是未来版本的那个commit id号) 
 
