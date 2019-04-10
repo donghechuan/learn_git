@@ -66,3 +66,10 @@ git reset --hard 1b33a(这是未来版本的那个commit id号)
 查看命令执行记录
 git reflog
 
+工作区就是工作目录，如learn_git文件夹是一个工作区
+工作区中有一个隐藏的.git 这个是git版本库
+版本库中有stage(暂存区)和一个master分支
+工作区-> stage -> master
+git add 将文件从工作区添加到暂存区
+git commit 再将文件从暂存区提交到当前分支
+
