@@ -96,5 +96,9 @@ git checkout -- test.txt
 ssh-keygen -t rsa -C "your email"
 第二步 登陆github 打开“Account settings”,"SSH Keys"页面，点击“Add SSH Key”
 填上任意title，在Key文本框里粘贴id_rsa.pub文件内容 点击“Add Key”就可以看到添加的key了
-
+第三步 在github创建一个新仓库learn_git
+第四步 把已经有的本地仓库与github上的新仓库learn_git关联
+git remote add origin git@github.com:donghechuan/learn_git.git  其中origin是git默认的远程库名字
+第五步 把本地库所有内容推送到远程库上
+git push -u origin master (由于远程库是空的，第一次推送到远程仓库时加参数 -u 以后就不用加-u了)
 
