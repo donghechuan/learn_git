@@ -90,3 +90,11 @@ git commit -m "rm test.txt"
 rm test.txt /用rm直接删除或在文件管理器中删除
 git checkout -- test.txt
 
+远程仓库github
+本地git仓库和github仓库之间的传输是通过ssh加密的
+第一步 创建ssh key
+ssh-keygen -t rsa -C "your email"
+第二步 登陆github 打开“Account settings”,"SSH Keys"页面，点击“Add SSH Key”
+填上任意title，在Key文本框里粘贴id_rsa.pub文件内容 点击“Add Key”就可以看到添加的key了
+
+
