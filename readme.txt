@@ -61,5 +61,8 @@ git reset --hard HEAD^^
 git reset --hard HEAD~100
 
 回到未来的某个版本
-git reset --hard 1b33a(这是未来版本的那个commit id号) 
+git reset --hard 1b33a(这是未来版本的那个commit id号)
+
+查看命令执行记录
+git reflog
 
