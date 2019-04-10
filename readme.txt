@@ -90,7 +90,7 @@ git commit -m "rm test.txt"
 rm test.txt /用rm直接删除或在文件管理器中删除
 git checkout -- test.txt
 
-远程仓库github
+添加远程仓库github并将本地仓库内容推送到远程仓库上
 本地git仓库和github仓库之间的传输是通过ssh加密的
 第一步 创建ssh key
 ssh-keygen -t rsa -C "your email"
@@ -101,4 +101,8 @@ ssh-keygen -t rsa -C "your email"
 git remote add origin git@github.com:donghechuan/learn_git.git  其中origin是git默认的远程库名字
 第五步 把本地库所有内容推送到远程库上
 git push -u origin master (由于远程库是空的，第一次推送到远程仓库时加参数 -u 以后就不用加-u了)
+
+从远程仓库中克隆到本地仓库
+git clone git@github.com:donghechuan/gitskills.git
+
 
