@@ -81,3 +81,12 @@ git checkout -- readme.txt
 2.文件修改后执行了 git add 已到达stage（暂存区）使用下面命令可以把暂存区的修改撤销掉,然后在执行1的命令就可以把工作区的修改撤销
 git reset HEAD readme.txt
 
+删除文件test.txt
+第一种情况(将工作区和版本库分支中的文件都删除干净，不能恢复): 
+rm test.txt /用rm直接删除或在文件管理器中删除
+git rm test.txt
+git commit -m "rm test.txt"
+第二种情况：（误删除，可以从版本库中恢复到工作区中）
+rm test.txt /用rm直接删除或在文件管理器中删除
+git checkout -- test.txt
+
