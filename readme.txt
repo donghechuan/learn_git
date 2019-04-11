@@ -160,6 +160,6 @@ git branch -d dev
 解决分支间的冲突
 git status 查看合并分支时的不同，手动修改后在提交
 
-查看分支和并情况
+查看分支合并情况
 git log --graph --pretty=oneline --abbrev-commit
 
