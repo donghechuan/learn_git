@@ -214,3 +214,25 @@ git checkout -b dev origin/dev
 如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
 
 这就是多人协作的工作模式，一旦熟悉了，就非常简单
+
+
+标签
+git tag <tagname> 用于创建一个新标签，默认为HEAD，也可以指定一个commit id
+
+git tag -a <tagname> -m "指定标签信息"
+
+git tag 可以查看所有标签
+
+命令git push origin <tagname>可以推送一个本地标签；
+
+命令git push origin --tags可以推送全部未推送过的本地标签；
+
+命令git tag -d <tagname>可以删除一个本地标签；
+
+命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+
+配置别名
+
+只需要敲一行命令，告诉Git，以后st就表示status：
+
+git config --global alias.st status
