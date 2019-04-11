@@ -163,3 +163,4 @@ git status 查看合并分支时的不同，手动修改后在提交
 查看分支合并情况
 git log --graph --pretty=oneline --abbrev-commit
 
+git log退出按Q
