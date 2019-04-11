@@ -128,4 +128,13 @@ git push -u origin master (由于远程库是空的，第一次推送到远程�
 从远程仓库中克隆到本地仓库
 git clone git@github.com:donghechuan/gitskills.git
 
+创建分支dev，并切换到dev分支：
+git checkout -b dev
+
+git checkout命令加上-b参数表示创建并切换，相当于下面两条命令
+git branch dev 
+git checkout dev
+
+列出所有分支，当前分支前面有个*
+git branch
 
