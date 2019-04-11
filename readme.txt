@@ -132,9 +132,14 @@ git clone git@github.com:donghechuan/gitskills.git
 git checkout -b dev
 
 git checkout命令加上-b参数表示创建并切换，相当于下面两条命令
-git branch dev 
-git checkout dev
+git branch dev   //创建分支dev 
+git checkout dev //切换分支到dev上
 
 列出所有分支，当前分支前面有个*
 git branch
 
+将dev分支合并到master分支上：
+git merge dev
+
+合并后可以删除dev分支
+git branch -d dev
